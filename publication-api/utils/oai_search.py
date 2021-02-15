@@ -69,9 +69,3 @@ def get_oai_xml_response(handle: str, prefix: str = "oai_dc") -> BeautifulSoup:
                                   + " hasn't been inserted into OAI"
                                   + "repository")
         return soup
-
-
-if __name__ == "__main__":
-    a = requests.get(build_oai_url("http://hdl.handle.net/11390/693468", "oai_dc"))
-    soup = BeautifulSoup(a.content, "lxml")
-    print(soup.find("dc:creator").string)

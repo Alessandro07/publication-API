@@ -201,6 +201,7 @@ class Title(OaiElement):
     Attributes
     ----------
     ** See Element class  (grandparent) **
+
     """
     def __init__(self, soup: BeautifulSoup):
         self._tag_name = "title"
@@ -251,6 +252,7 @@ class PubType(OaiElement):
             "com_11390_1063635": "1 Contributo su Rivista"
             ....
         }
+
     """
     def __init__(self, soup: BeautifulSoup):
         self._tag_name = "setspec"
@@ -302,6 +304,7 @@ class Authors(OaiElement):
     Attributes
     ----------
     ** See Element class  (grandparent) **
+
     """
     def __init__(self, soup: BeautifulSoup):
         self._tag_name = "creator"
@@ -361,6 +364,7 @@ class Year(OaiElement):
     Attributes
     ----------
     ** See Element class  (grandparent) **
+
     """
     def __init__(self, soup: BeautifulSoup):
         self._tag_name = "date"
@@ -382,6 +386,7 @@ class Abstract(OaiElement):
     Attributes
     ----------
     ** See Element class  (grandparent) **
+
     """
     def __init__(self, soup: BeautifulSoup):
         self._tag_name = "description"
@@ -408,6 +413,7 @@ class Doi(OaiElement):
     Attributes
     ----------
     ** See Element class  (grandparent) **
+
     """
 
     def __init__(self, soup: BeautifulSoup):
@@ -546,6 +552,7 @@ class Pdf(OreElement):
     Attributes
     ----------
     ** See Element class  (grandparent) **
+
     """
     def __init__(self, soup: BeautifulSoup):
         self._tag_name = "link"

@@ -1,5 +1,5 @@
 from typing import List, Dict
-from elements import OaiElement, OreElement, factory
+from elements import OaiElement, OreElement
 from utils.oai_search import get_oai_xml_response
 
 
@@ -153,13 +153,3 @@ class Publication:
                     v = element.markdown_value()
                     res.update(v)
         return res
-
-
-if __name__ == "__main__":
-    elements = ["title", "handle", "publication type", "publication type",
-                "authors", "year", "doi", "pdf", "pages", "volume",
-                "journal", "book_title"]
-    elements_to_pass = []
-    for el in elements:
-        elements_to_pass.append(factory.get_element(el))
-    p = Publication(elements_to_pass, [], "http://hdl.handle.net/11390/853899")
