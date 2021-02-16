@@ -32,8 +32,8 @@ release = '1.0'
 # ones.
 extensions = [
     # For numpy docs
-    'sphinx.ext.napoleon',
     'sphinx.ext.autodoc',
+    'sphinx.ext.napoleon',
     'sphinx_autodoc_typehints'
 ]
 # Additional parameters
