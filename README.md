@@ -1,2 +1,2 @@
 # publication-API
-API For publication retrieval from the institutional repository of Università degli studi di Udine
+API per ricavare le pubblicazioni dall'archivio istituzionale dell' Università degli studi di Udine.
