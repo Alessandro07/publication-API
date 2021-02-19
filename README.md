@@ -1,4 +1,4 @@
-# publication-API
+# UNIUD-PUBLICATION-API
 API per ricavare le pubblicazioni dall'archivio istituzionale dell' Università degli studi di Udine.
 
 ## Come installare l'API?
