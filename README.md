@@ -4,7 +4,7 @@ API per ricavare le pubblicazioni dall'archivio istituzionale dell' Università 
 
 ## Come Usare l'API
 
-:warning: :warning: **La versione attuale dell'API non permette l'esportazione delle pubblicazioni su Windows, pertanto è necessario disporre di un sistema con linux o MacOS. In alternativa è possibile usare una macchina virtuale**
+:warning: :warning: **La versione attuale dell'API non permette l'esportazione delle pubblicazioni su Windows, pertanto è necessario disporre di un sistema con linux o MacOS. In alternativa è possibile usare una macchina virtuale** :warning: :warning:
 
 Per utilizzare l'API si consiglia innanzitutto di creare un nuovo ambiente virtuale.</br>
 Tramite conda: https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html#managing-environments </br>
