@@ -1,7 +1,7 @@
 from bibtexparser.bwriter import BibTexWriter
 from abc import ABC, abstractmethod
 from bibtexparser.bibdatabase import BibDatabase
-from dep_pubs import DepartmentPublications
+from .dep_pubs import DepartmentPublications
 import os
 
 
@@ -24,6 +24,14 @@ class PublicationWriter(ABC):
         """
 
         self._dep_pubs = dep_pubs
+    
+    def _create_dir(self, path:str) -> None:
+        try:
+            if not os.path.exists(path):
+                os.mkdir(path, 0o755)
+        except OSError:
+            print("Creation of the directory failed {}", path)
+
 
     @abstractmethod
     def export(self, path: str = "./pubs/"):
@@ -33,6 +41,8 @@ class PublicationWriter(ABC):
 class BibtexPublicationWriter(PublicationWriter):
     """ Use this class for writing publications in bibtex format
     """
+
+
 
     def export(self, path: str = "./pubs/") -> None:
         """overrides superclass abstract method
@@ -52,6 +62,7 @@ class BibtexPublicationWriter(PublicationWriter):
         KeyError
             if the type of publication and the handle are not specified
         """
+        self._create_dir(path)
         for pub in self._dep_pubs:
             meta = pub.get_bibtex_representation()
             if not meta:
@@ -103,6 +114,7 @@ class BibtexPublicationWriter(PublicationWriter):
         KeyError
             if the type of publication and the handle are not specified
         """
+        self._create_dir(path)
         for pub in self._dep_pubs:
             meta = pub.get_bibtex_representation()
             if not meta:

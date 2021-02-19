@@ -1,8 +1,8 @@
-from utils.decorators import timer
-from publications import Publication
+from .utils.decorators import timer
+from .publications import Publication
 from collections.abc import Iterable, Iterator
 from typing import Dict, List
-from elements import factory, Element
+from .elements import factory, Element
 from bs4 import BeautifulSoup
 import requests
 import re
@@ -30,7 +30,7 @@ class DepartmentPublications(Iterable):
             }
         elements_to_find
             a list containing all metadata to be found.
-            **WRITE THEM IN THE SAME ORDER YOU WANT THE RESPONSE TO**
+            ** WRITE THEM IN THE SAME ORDER YOU WANT THE RESPONSE TO **
             Mandatory elements: "title", "handle", "type"
             e.g.
             elements_to_find = ["title", "handle"]

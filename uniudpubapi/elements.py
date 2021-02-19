@@ -171,7 +171,7 @@ class OaiElement(Element):
 
 class OreElement(Element):
     """This class represents an element inside an xml document retrieved using
-    OAI-PMH protocol, **using the ORE metadata format**.
+    OAI-PMH protocol, ** using the ORE metadata format **.
     It is recommended to inherit from this class if the element is the value of
     an attribute of the tag.
     """

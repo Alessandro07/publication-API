@@ -1,6 +1,6 @@
 from typing import List, Dict
-from elements import OaiElement, OreElement
-from utils.oai_search import get_oai_xml_response
+from .elements import OaiElement, OreElement
+from .utils.oai_search import get_oai_xml_response
 
 
 class Publication:
