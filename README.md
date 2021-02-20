@@ -86,7 +86,7 @@ Per l'esportazione in bibtex:
 bib = BibtexPublicationWriter(d)
 bib.export()
 ```
-Il paremetro passato ad entrambi i costruttori è un oggetto di tipo "DepartmentPublication" in cui è già stata chiamata la funzione "find_department_publications()" (Vedi paragrafo precedente). <\br>
+Il parametro passato ad entrambi i costruttori è un oggetto di tipo "DepartmentPublication" in cui è già stata chiamata la funzione "find_department_publications()" (Vedi paragrafo precedente). <\br>
 Il metodo "export" accetta un argomento opzionale che indica il percordo in cui salvare tutte le pubblicazioni. Il valore di default è "./pubs". Se la directory indicata non esiste, verrà creata in automatico. <\br>
 Il metodo export crea una directory per ogni pubblicazione, nominata con il titolo della pubblicazione. All'interno della directory della singola pubblicazione viene inserito un file "index.md" per l'esportazione in markdown e un file "cite.bib" per l'esportazione in bibtex.
 Questo formato è stato scelto in modo che sia compatibile con il formato richiesto dal tema "academic" per il generatore di siti statici Hugo (vedi https://wowchemy.com/docs/content/publications/ per maggiori informazioni).</br>
